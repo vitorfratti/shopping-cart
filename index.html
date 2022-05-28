@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/image/apple-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap');
+    </style>
+    <title>Apple Shop</title>
+</head>
+<body>
+    <div id="container" class="container">
+
+        <header>
+            <div class="header-left">
+                <button class="apple-btn"><img id="apple-icon" src="assets/image/apple-logo.png" alt="apple-logo"></button>
+            </div>
+            <div class="header-right">
+                <button id="cart-btn" class="cart-btn"><img id="bag-icon" src="assets/image/bag-header.png" alt="bag"></button>
+                <p id="number-cart" class="number-cart"></p>
+            </div>
+        </header>
+
+        <nav>
+            <div class="filters-container">
+                <div class="category-filter">
+                    <p class="title-filter">Category</p>
+                    <select id="category" class="filter">
+                        <option value="all">All</option>
+                        <option value="applewatch">Apple Watch</option>
+                        <option value="airpods">AirPods</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="products-container">
+                <div class="product applewatch graphite">
+                    <div class="main-product">
+                        <img class="applewatch" src="assets/image/apple-watch-series-7-graphite.png" alt="apple-watch-series-7-grafite">
+                    </div>
+                    <div class="footer-product">
+                        <div class="footer-left-prodct">
+                            <p class="name-product">Apple Watch Series 7 Graphite</p>
+                            <p class="price-product">$749</p>
+                        </div>
+                        <div class="footer-right-product">
+                            <button class="addtocart-btn"><img class="bag" src="assets/image/bag.png" alt="bag"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product applewatch gold">
+                    <div class="main-product">
+                        <img class="applewatch" src="assets/image/apple-watch-series-7-gold.png" alt="apple-watch-series-7-gold">
+                    </div>
+                    <div class="footer-product">
+                        <div class="footer-left-product">
+                            <p class="name-product">Apple Watch Series 7 Gold</p>
+                            <p class="price-product">$749</p>
+                        </div>
+                        <div class="footer-right-product">
+                            <button class="addtocart-btn"><img class="bag" src="assets/image/bag.png" alt="bag"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product applewatch blue">
+                    <div class="main-product">
+                        <img class="applewatch" src="assets/image/apple-watch-series-7-aluminio-azul.png" alt="apple-watch-series-7-aluminio-azul">
+                    </div>
+                    <div class="footer-product">
+                        <div class="footer-left-product">
+                            <p class="name-product">Apple Watch Series 7 Blue</p>
+                            <p class="price-product">$549</p>
+                        </div>
+                        <div class="footer-right-product">
+                            <button class="addtocart-btn"><img class="bag" src="assets/image/bag.png" alt="bag"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product airpods white">
+                    <div class="main-product">
+                        <img class="airpods" src="assets/image/airpods-pro.png" alt="airpods-pro">
+                    </div>
+                    <div class="footer-product">
+                        <div class="footer-left-product">
+                            <p class="name-product">AirPods Pro</p>
+                            <p class="price-product">$249</p>
+                        </div>
+                        <div class="footer-right-product">
+                            <button class="addtocart-btn"><img class="bag" src="assets/image/bag.png" alt="bag"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product airpods green">
+                    <div class="main-product">
+                        <img class="airpods" src="assets/image/airpods-max-verde.png" alt="airpods-max-verde">
+                    </div>
+                    <div class="footer-product">
+                        <div class="footer-left-product">
+                            <p class="name-product">AirPods Max Green</p>
+                            <p class="price-product">$549</p>
+                        </div>
+                        <div class="footer-right-product">
+                            <button class="addtocart-btn"><img class="bag" src="assets/image/bag.png" alt="bag"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product airpods white">
+                    <div class="main-product">
+                        <img class="airpods" src="assets/image/airpods-max.png" alt="airpods-max">
+                    </div>
+                    <div class="footer-product">
+                        <div class="footer-left-product">
+                            <p class="name-product">AirPods Max Silver</p>
+                            <p class="price-product">$549</p>
+                        </div>
+                        <div class="footer-right-product">
+                            <button class="addtocart-btn"><img class="bag" src="assets/image/bag.png" alt="bag"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product applewatch gold">
+                    <div class="main-product">
+                        <img class="applewatch" src="assets/image/apple-watch-series-7-estelar.png" alt="apple-watch-series-7-estelar">
+                    </div>
+                    <div class="footer-product">
+                        <div class="footer-left-product">
+                            <p class="name-product">Apple Watch Series 7 Starlight</p>
+                            <p class="price-product">$529</p>
+                        </div>
+                        <div class="footer-right-product">
+                            <button class="addtocart-btn"><img class="bag" src="assets/image/bag.png" alt="bag"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product applewatch green">
+                    <div class="main-product">
+                        <img class="applewatch" src="assets/image/apple-watch-series-7-green.png" alt="apple-watch-series-7-green">
+                    </div>
+                    <div class="footer-product">
+                        <div class="footer-left-product">
+                            <p class="name-product">Apple Watch Series 7 Green</p>
+                            <p class="price-product">$449</p>
+                        </div>
+                        <div class="footer-right-product">
+                            <button class="addtocart-btn"><img class="bag" src="assets/image/bag.png" alt="bag"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product applewatch red">
+                    <div class="main-product">
+                        <img class="applewatch" src="assets/image/apple-watch-series-7-red.png" alt="apple-watch-series-7-red">
+                    </div>
+                    <div class="footer-product">
+                        <div class="footer-left-product">
+                            <p class="name-product">Apple Watch Series 7 Red</p>
+                            <p class="price-product">$449</p>
+                        </div>
+                        <div class="footer-right-product">
+                            <button class="addtocart-btn"><img class="bag" src="assets/image/bag.png" alt="bag"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product airpods graphite">
+                    <div class="main-product">
+                        <img class="airpods" src="assets/image/airpods-max-black.png" alt="airpods-max">
+                    </div>
+                    <div class="footer-product">
+                        <div class="footer-left-product">
+                            <p class="name-product">AirPods Max Space Grey</p>
+                            <p class="price-product">$549</p>
+                        </div>
+                        <div class="footer-right-product">
+                            <button class="addtocart-btn"><img class="bag" src="assets/image/bag.png" alt="bag"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product airpods blue">
+                    <div class="main-product">
+                        <img class="airpods" src="assets/image/airpods-max-blue.png" alt="airpods-max">
+                    </div>
+                    <div class="footer-product">
+                        <div class="footer-left-product">
+                            <p class="name-product">AirPods Max Sky Blue</p>
+                            <p class="price-product">$549</p>
+                        </div>
+                        <div class="footer-right-product">
+                            <button class="addtocart-btn"><img class="bag" src="assets/image/bag.png" alt="bag"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product airpods red">
+                    <div class="main-product">
+                        <img class="airpods" src="assets/image/airpods-max-pink.png" alt="airpods-max">
+                    </div>
+                    <div class="footer-product">
+                        <div class="footer-left-product">
+                            <p class="name-product">AirPods Max Pink</p>
+                            <p class="price-product">$549</p>
+                        </div>
+                        <div class="footer-right-product">
+                            <button class="addtocart-btn"><img class="bag" src="assets/image/bag.png" alt="bag"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- SHOPPING CART -->
+
+    <div id="cart-container" class="cart-container">
+        <div class="header-cart-container">
+            <h1 class="title-cart-container">Order</h1>
+            <button id="close-cart-btn" class="close-cart-btn"><img id="close-cart-icon" src="assets/image/right-arrow.png" alt="right-arrow"></button>
+        </div>
+        <div id="main-cart-container" class="main-cart-container">
+            <p id="empty-message" class="empty-message">Your bag is empty.</p>
+        </div>
+        <div id="footer-cart-container" class="footer-cart-container">
+            <div class="subtotal-container">
+                <p class="subtotal-title">Subtotal</p>
+                <div class="subtotal-value-container">
+                    <p class="subtotal-value">$</p>
+                    <p id="subtotal-value" class="subtotal-value">0</p>
+                </div>
+            </div>
+            <div class="shipping-container">
+                <p class="shipping-title">Shipping</p>
+                <div class="shipping-value-container">
+                    <p  class="shipping-value">$</p>
+                    <p id="shipping-value" class="shipping-value">19</p>
+                </div>
+            </div>
+            <div class="total-container">
+                <p class="total-title">Total</p>
+                <div class="total-value-container">
+                    <p class="total-value">$</p>
+                    <p id="total-value" class="total-value">768</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

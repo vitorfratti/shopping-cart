@@ -1,0 +1,392 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body {
+    background: #eceef0;
+}
+
+.container {
+    height: 100%;
+    transition: 1s;
+}
+
+header {
+    background: #ffffff;
+    height: 6rem;
+    box-shadow: 0 0 10px #dadada;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    margin-top: -6rem;
+    z-index: 10;
+}
+
+button.apple-btn {
+    border: none;
+    background: none;
+    height: 4rem;
+    cursor: pointer;
+}
+
+img#apple-icon {
+    width: 2.6rem;
+    transition: 0.5s;
+}
+
+img#apple-icon:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-start;
+}
+
+button.cart-btn {
+    border: none;
+    background: none;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+img#bag-icon {
+    width: 50%;
+    transition: 0.5s;
+}
+
+img#bag-icon:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+p.number-cart {
+    margin-top: 1.5rem;
+    margin-left: -0.5rem;
+}
+
+nav {
+    padding: 3rem 13rem;
+    margin-top: 6rem;
+}
+
+.filters-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-filter {
+    display: flex;
+    justify-content: space-between;
+    width: 13rem;
+}
+
+p.title-filter {
+    font-size: 1rem;
+    padding: 0.2rem 0;
+    color: #262626;
+}
+
+select.filter {
+    width: 8rem;
+    padding: 0 0.4rem;
+    border: 1px solid #afafaf; color: #262626;
+}
+
+main {
+    padding: 0 13rem;
+}
+
+/* PRODUCTS */
+
+.products-container {
+    margin-top: 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 25rem;
+    height: 25rem;
+    background: #ffffff;
+    margin-bottom: 6rem;
+    box-shadow: 0 0 2px #dadada;
+}
+
+.main-product img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.main-product {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0 0 2px #dadada;
+}
+
+img.applewatch, img.airpods {
+    width: 16rem;
+    margin: 1.5rem;
+    transition: 0.5s;
+}
+
+.footer-product {
+    background: #eceef0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 2px #afafaf;
+}
+
+p.name-product {
+    color: #262626;
+    font-size: 1.2rem;
+}
+
+p.price-product {
+    color: #262626;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+button.addtocart-btn:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+button.addtocart-btn {
+    border: none;
+    background: #000000;
+    cursor: pointer;
+    padding: 0.6rem 0.7rem;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+img.bag {
+    width: 1.5rem;
+}
+
+/* SHOPPING CART */
+
+.cart-container {
+    position: fixed;
+    top: 0;
+    right: -30%;
+    width: 30%;
+    height: 100vh;
+    background: #fcfbfc;
+    box-shadow: 0 0 2px #dadada;
+    transition: 1s;
+}
+
+.header-cart-container {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f1f1;
+    background: #ffffff;
+}
+
+button.close-cart-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+img#close-cart-icon {
+    width: 2rem;
+}
+
+.main-cart-container {
+    background: #fcfbfc;
+    height: 64vh;
+    overflow-y: scroll;
+    padding: 1rem 1rem;
+}
+
+.footer-cart-container {
+    display: none;
+    border-top: 1px solid #f1f1f1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+p.empty-message {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.subtotal-container, .shipping-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border: 1px solid #f1f1f1;
+    background: #ffffff;
+}
+
+.total-container {
+    background: #e7eff8;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border: 1px solid #f1f1f1;
+}
+
+.subtotal-value-container, .shipping-value-container,
+.total-value-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+p.subtotal-title, p.subtotal-value,
+p.shipping-title, p.shipping-value {
+    font-size: 1.2rem;
+}  
+
+p.total-title, p.total-value {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #275d98;
+}
+
+/* PRODUCTS IN THE CART */
+
+.product-inthecart {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.img-product-container-inthecart {
+    padding: 1rem;
+    background: #ffffff;
+    box-shadow: 0 0 2px #b9b9b9;
+    border-radius: 8px;
+}
+
+img.img-product-inthecart {
+    width: 3rem;
+}
+
+.name-container-product-inthecart {
+    margin-top: 0.7rem;
+    width: 38%;
+}
+
+p.name-product-inthecart {
+    font-size: 1.1rem;
+}
+
+p.code-product-inthecart {
+    color: #858585;
+    font-weight: 300;
+    margin-top: 0.4rem;
+}
+
+.amount-container-product-inthecart {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    margin-top: 1.5rem;
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+}
+
+button.less-amount-inthecart {
+    background: none;
+    color: #525252;
+    border: none;
+    cursor: pointer;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-bottom: 0.2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    height: 2rem;
+}
+
+button.more-amount-inthecart {
+    background: none;
+    color: #525252;
+    border: none;
+    cursor: pointer;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-bottom: 0.3rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    height: 2rem;
+}
+
+p.amount-value-inthecart {
+    padding-top: 0.25rem;
+}
+
+.price-container-product-inthecart {
+    margin-top: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.remove-container-product-inthecart {
+    padding-top: 1.6rem;
+    margin-right: 0.7rem;
+}
+
+button.remove-product-inthecart-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+img.remove-icon {
+    width: 1.5rem;
+}
+
+/* JAVASCRIPT */
+
+.open {
+    transition: 1s;
+    right: 0;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none;
+}
+
+.brightness {
+    background: #ececec;
+    filter: brightness(70%);
+    transition: 1s;
+}
+
+.selected {
+    border: 3px solid #ffffff;
+    outline: 2px solid #000;
+}
+
